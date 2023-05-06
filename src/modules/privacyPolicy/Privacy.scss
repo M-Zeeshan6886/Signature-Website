@@ -1,0 +1,161 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.privacy-container {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  padding: 0.5rem 0rem;
+  //   background-color: palegreen;
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 50px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #2b4465;
+  }
+  & > p {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    color: rgba(43, 68, 101, 0.5);
+  }
+  &-content {
+    width: 75%;
+    margin: auto;
+    height: auto;
+    padding: 0.5rem 0rem;
+    // background-color: aqua;
+    & > *:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+    & > p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 27px;
+      text-transform: capitalize;
+      /* text color */
+      color: #2b4465;
+    }
+  }
+}
+
+.privacy-container2 {
+  width: 100%;
+  height: auto;
+  padding: 2rem 0rem;
+  background-color: $lightsky;
+  &-content {
+    width: 75%;
+    margin: auto;
+    height: auto;
+    padding: 1rem 0rem;
+    // background-color: paleturquoise;
+    & > ul {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 20px;
+      text-transform: capitalize;
+      color: #000000;
+      list-style-position: inside;
+      & > li {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.privacy-container3 {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem;
+  //   background-color: palegreen;
+  &-content {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    // background-color: lightblue;
+    & > h1 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.7rem;
+      line-height: 27px;
+      text-transform: capitalize;
+      /* text color */
+      color: #2b4465;
+    }
+    & > ul {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 20px;
+      text-transform: capitalize;
+      /* text color */
+      color: #2b4465;
+      list-style-position: outside;
+      & > li {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
+
+.privacy-container4 {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  &-content {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    & > h1 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.7rem;
+      line-height: 27px;
+      text-transform: capitalize;
+      /* text color */
+      color: #2b4465;
+    }
+    & > p {
+      margin-top: 2rem;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 20px;
+      text-transform: capitalize;
+      /* text color */
+      color: #2b4465;
+    }
+    & > ul {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 20px;
+      text-transform: capitalize;
+      /* text color */
+      color: #2b4465;
+      & > li {
+        margin-left: 2.3rem;
+      }
+    }
+  }
+}

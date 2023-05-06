@@ -1,0 +1,122 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.signup-container {
+  width: 100%;
+  height: auto;
+  padding: 5.5rem 0rem;
+  background-color: white;
+  &-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    // background-color: white;
+    &-left {
+      width: 50%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      //   background-color: aqua;
+      @include respond(phone) {
+        width: 100%;
+      }
+      & > h1 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.9rem;
+        line-height: 35px;
+        text-align: center;
+        color: $lightnevi;
+      }
+      &-content {
+        width: 387px;
+        height: auto;
+        margin: auto;
+        margin-top: 29px;
+        // background-color: white;
+        &-btn {
+          padding: 9.675px;
+          width: 100%;
+          height: 42.35px;
+          border: none;
+          font-weight: 700;
+          font-size: 19.35px;
+          line-height: 23px;
+          color: white;
+          background: $skyshede;
+          border-radius: 9.675px;
+          cursor: pointer;
+        }
+        & > p {
+          margin-top: 15px;
+          font-weight: 400;
+          font-size: 16.9312px;
+          line-height: 20px;
+          text-align: center;
+          color: $blacktext;
+          & > span {
+            color: $blue;
+          }
+        }
+        &-continue {
+          width: 100%;
+          height: auto;
+          margin-top: 11px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          //   background-color: aqua;
+          & > hr {
+            width: 85.87px;
+            border: 2.41875px solid #eeeeee;
+          }
+          & > p {
+            font-weight: 400;
+            font-size: 16.9312px;
+            line-height: 140%;
+            color: $gray;
+          }
+        }
+        & > button {
+          width: 100%;
+          height: auto;
+          padding: 0.7rem 0rem;
+          margin-top: 30px;
+          border: 1.20938px solid #eeeeee;
+          border-radius: 1.5rem;
+          background: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    &-right {
+      width: 50%;
+      height: 829px;
+      border-radius: 0.3rem;
+      // background-color: lightcoral;
+      background-image: url("../../assets/signupAssets/rightimg2.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      //   & > img {
+      //     width: 100%;
+      //     height: 829px;
+      //   }
+      @include respond(phone) {
+        display: none;
+      }
+    }
+  }
+}
+.socialbtns {
+  width: 102.8px;
+  height: 67.72px;
+  background: none;
+  border: 1.20938px solid #eeeeee;
+  border-radius: 2rem;
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.appbutton {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #667b96;
+  background: rgba(248, 249, 251, 0.5);
+  &:hover {
+    background-color: #00c6f758;
+  }
+  &-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    & > h3 {
+      margin-left: 10px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.1rem;
+      line-height: 16px;
+      color: $lightnevi;
+    }
+  }
+}

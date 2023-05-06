@@ -1,0 +1,568 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.popup-paymentmethod {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background: #2b4465;
+  opacity: 0.9;
+  &-content {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    // padding: 0.5rem 0rem;
+    background-color: pink;
+    &-left {
+      width: 50%;
+      height: auto;
+      padding: 2rem 0rem;
+      background-color: #191c2b;
+      & > h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.7rem;
+        line-height: 38px;
+        color: #ffffff;
+        & > span {
+          font-weight: 400;
+          font-size: 1.5rem;
+        }
+      }
+
+      & > p {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 10px;
+        color: #ffffff;
+      }
+      &-menu {
+        width: 75%;
+        height: auto;
+        margin: auto;
+        margin-top: 35px;
+        // padding: 0.5rem 0rem;
+        // background-color: #8a8a8a;
+        & > p {
+          // text-align: center;
+          font-weight: 400;
+          font-size: 1.5rem;
+          line-height: 20px;
+          color: #ffffff;
+        }
+      }
+      &-btn {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        // background-color: aqua;
+        display: flex;
+        justify-content: center;
+        &-btnpop {
+          padding: 1rem 1.5rem;
+          background: none;
+          border: 0.5px solid #00cbfe;
+          border-radius: 2px;
+          font-weight: 700;
+          font-size: 1.4rem;
+          line-height: 18px;
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
+    &-right {
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0rem;
+      background-color: white;
+      &-cardtype {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // padding: 0.5rem 0rem;
+        // background-color: papayawhip;
+        & > input {
+          appearance: none;
+          width: 18px;
+          height: 18px;
+          border: 2px solid $lightsky;
+          border-radius: 50%;
+          transition: 0.2s all linear;
+          cursor: pointer;
+          &:checked {
+            border: 5px solid $lightsky;
+            border-radius: 50%;
+          }
+        }
+      }
+      &-inputfield {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-top: 20px;
+        // padding: 0.5rem 0rem;
+        // background-color: peru;
+        & > *:not(:first-child) {
+          margin-top: 1.5rem;
+        }
+        & > input {
+          width: 100%;
+          height: 40px;
+          padding: 1rem 1rem;
+          background: #ffffff;
+          border: 1px solid #858585;
+          border-radius: 5px;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            font-weight: 500;
+            font-size: 1.3rem;
+            line-height: 21px;
+            color: #888897;
+          }
+        }
+        & > select {
+          width: 100%;
+          height: 40px;
+          padding: 1rem 1rem;
+          background: #ffffff;
+          border: 1px solid #858585;
+          border-radius: 5px;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            font-weight: 500;
+            font-size: 1.3rem;
+            line-height: 21px;
+            color: #888897;
+          }
+        }
+      }
+    }
+  }
+}
+.purchase-btn {
+  // width: 280px;
+  // height: 55px;
+  cursor: pointer;
+  padding: 1rem 4rem;
+  background: #00cbfe;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.popup-container {
+  & > * {
+    width: 100%;
+  }
+}
+.pricing-container {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  padding: 2rem 0rem;
+  //   background-color: aqua;
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 50px;
+    color: #2b4465;
+    text-align: center;
+  }
+}
+.pricingcard-container {
+  width: 100%;
+  height: auto;
+  // padding: 0.5rem 0rem;
+  // background-color: palegoldenrod;
+  &-content {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    // padding: 0.5rem 0rem;
+    // background-color: plum;
+  }
+}
+
+.plansCards-container {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 0rem;
+  background-color: white;
+  & > h2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 50px;
+    text-align: center;
+    color: #2b4465;
+  }
+  &-content {
+    width: 40%;
+    height: auto;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    // background: #2b4465;
+    @include respond(tab-port) {
+      width: 80%;
+    }
+    &-rw1 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.3rem 0rem;
+      // background-color: paleturquoise;
+    }
+    &-rw2 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.2rem 0rem;
+      // background-color: papayawhip;
+    }
+  }
+}
+.cardboxp1 {
+  width: 49.5%;
+  height: 292px;
+  background: #ffffff;
+  padding: 24px 0px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+  &-content {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding: 0.5rem 0rem;
+    // background-color: aqua;
+    & > h2 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 25px;
+      text-transform: capitalize;
+      color: #2b4465;
+    }
+    & > p {
+      margin-top: 24px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 22px;
+      /* identical to box height */
+      text-transform: capitalize;
+      color: #8a8a8a;
+    }
+    & > span {
+      margin-top: 24px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.3rem;
+      line-height: 19px;
+      text-align: center;
+      text-transform: capitalize;
+      /* text color */
+      color: #2b4465;
+    }
+    & > button {
+      width: 100%;
+      height: 55px;
+
+      background: #2b4465;
+      border-radius: 4px;
+      border: none;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 18px;
+      color: #ffffff;
+      margin-top: 48px;
+    }
+  }
+}
+
+.cardboxp2 {
+  width: 49.5%;
+  height: 292px;
+  background: #ffffff;
+  padding: 24px 0px;
+  /* new */
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+  &-content {
+    width: 85%;
+    height: auto;
+    padding: 0.5rem 0rem;
+    margin: auto;
+    // background-color: aqua;
+    & > *:not(:first-child) {
+      margin-top: 16px;
+    }
+    &-items {
+      display: flex;
+      align-items: center;
+
+      & > p {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 17px;
+        text-transform: capitalize;
+        margin-left: 19px;
+        /* text color */
+        color: #2b4465;
+      }
+    }
+  }
+}
+
+.tb1-container {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  background-color: $lightsky;
+  // background-color: red;
+  &-content {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    // background-color: palegoldenrod;
+    &-rw1 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.3rem 0rem;
+      // background-color: lightblue;
+      @include respond(tab-port) {
+        flex-direction: column;
+        & > *:not(:first-child) {
+          margin-top: 2rem;
+        }
+      }
+    }
+    &-rw2 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.3rem 0rem;
+      // background-color: blue;
+
+      @include respond(tab-port) {
+        margin-top: 1.5rem;
+        flex-direction: column;
+        & > *:not(:first-child) {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+.pricingcard-container2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  // padding: 0.5rem 0rem;
+  // background-color: lawngreen;
+  @include respond(tab-port) {
+    display: none;
+  }
+  &-content {
+    width: 45%;
+    height: auto;
+    // margin: auto;
+    margin-left: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // padding: 0.5rem 0rem;
+    // background-color: papayawhip;
+    & > h1 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 1.5rem;
+      line-height: 29px;
+      text-transform: capitalize;
+      color: #2b4465;
+    }
+  }
+}
+.cardbox1 {
+  width: 24.5%;
+  height: 306px;
+  display: flex;
+  background: #2b4465;
+  border-radius: 8px 0px 0px 8px;
+  @include respond(tab-port) {
+    width: 60%;
+    border-radius: 8px 8px 8px 8px;
+  }
+  &-content {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    // padding: 0.5rem 0rem;
+    // background-color: aqua;
+    & > h2 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 2rem;
+      line-height: 29px;
+      text-transform: capitalize;
+      color: #ffffff;
+    }
+    & > p {
+      margin-top: 3rem;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 25px;
+      text-transform: capitalize;
+      color: #ffffff;
+    }
+  }
+}
+
+.cardbox2 {
+  width: 24.5%;
+  height: 306px;
+  display: flex;
+  //   align-items: baseline;
+  background: #ffffff;
+  @include respond(tab-port) {
+    width: 60%;
+    border-radius: 8px 8px 8px 8px;
+  }
+  &-content {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding: 0.5rem 0rem;
+    // background-color: aqua;
+    & > h2 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 2rem;
+      line-height: 25px;
+      text-transform: capitalize;
+      color: #2b4465;
+    }
+    & > span {
+      margin-top: 24px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 22px;
+      text-transform: capitalize;
+      color: #8a8a8a;
+    }
+    & > p {
+      width: 70%;
+      margin-top: 24px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 19px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #2b4465;
+    }
+    & > button {
+      margin-top: 57px;
+      width: 100%;
+      height: 55px;
+
+      color: #2b4465;
+      border-radius: 4px;
+      border: 1px solid #2b4465;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 18px;
+      background: none;
+      &:hover {
+        background: #2b4465;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.cardbox3 {
+  width: 24.5%;
+  height: 306px;
+  padding: 1rem 0rem;
+  //   align-items: baseline;
+  background: #ffffff;
+  @include respond(tab-port) {
+    width: 60%;
+    border-radius: 8px 8px 8px 8px;
+  }
+  &-content {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // padding: 0.5rem 0rem;
+    // background-color: aqua;
+    & > *:not(:first-child) {
+      margin-top: 21.5px;
+    }
+    &-item1 {
+      display: flex;
+      & > p {
+        margin-left: 19px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 17px;
+        text-transform: capitalize;
+        color: #2b4465;
+      }
+    }
+  }
+}

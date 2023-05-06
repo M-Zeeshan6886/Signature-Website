@@ -1,0 +1,51 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.aqbox {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem;
+  background: $lightsky;
+  // opacity: 0.25;
+  border-radius: 12px;
+  cursor: pointer;
+  &-content {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    // background-color: lemonchiffon;
+    & > h2 {
+      width: 80%;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 15px;
+      color: #2b4465;
+    }
+    & > img {
+      width: 12px;
+      cursor: pointer;
+    }
+  }
+  &-innercontent {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 1.5rem;
+    padding: 0.5rem 0rem;
+    // background-color: papayawhip;
+    & > p {
+      margin-bottom: 1.5rem;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 18px;
+      color: #2b4465;
+    }
+  }
+}

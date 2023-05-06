@@ -1,0 +1,81 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.createsignature-container {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  padding: 3rem 0rem;
+  background-color: white;
+  & > h3 {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 29px;
+    color: #2b4465;
+  }
+  &-innercontainer {
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;
+    padding: 0.5rem 0rem;
+    background-color: $lightsky;
+    &-content {
+      width: 85%;
+      height: auto;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0rem;
+      // background-color: lightgoldenrodyellow;
+      &>*:not(:first-child){
+        margin-left: 2.5rem;
+      }
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
+      &-col1 {
+        width: 32%;
+        height: auto;
+        padding: 0.5rem 0rem;
+        // background-color: palegreen;
+        & > *:not(:first-child) {
+          margin-top: 2rem;
+        }
+        @include respond(tab-port) {
+          width: 85%;
+          margin: auto;
+        }
+      }
+      &-col2 {
+        width: 32%;
+        height: auto;
+        padding: 0.5rem 0rem;
+        // background-color: palegreen;
+        @include respond(tab-port) {
+          width: 85%;
+          margin: auto;
+        }
+        & > *:not(:first-child) {
+          margin-top: 2rem;
+        }
+      }
+      &-col3 {
+        width: 32%;
+        height: auto;
+        padding: 0.5rem 0rem;
+        // background-color: palegreen;
+        & > *:not(:first-child) {
+          margin-top: 2rem;
+        }
+        @include respond(tab-port) {
+          width: 85%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

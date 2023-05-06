@@ -1,0 +1,26 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.playout-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: aqua;
+  &-content1 {
+    // width: 5%;
+    // height: 100vh;
+    // background: #bff2fe;
+  }
+  &-content2 {
+    width: 20%;
+    height: 100vh;
+    background: gold;
+    border-right: 1px solid #858585;
+  }
+  &-content3 {
+    width: 75%;
+    height: 100vh;
+    background: white;
+  }
+}

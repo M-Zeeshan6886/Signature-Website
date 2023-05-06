@@ -1,0 +1,79 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.scard9-container {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem;
+  background-color: #9359a4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  &-content {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    padding: 0.5rem 0rem;
+    // background-color: lawngreen;
+    &-left {
+      width: 25%;
+      height: auto;
+      //   margin: auto;
+      padding: 0.5rem 0rem;
+      //   background-color: lightblue;
+      & > img {
+        width: 90%;
+      }
+    }
+    &-middle {
+      width: 37.5%;
+      height: auto;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0.5rem 0.6rem;
+      //   background-color: khaki;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      & > h1 {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 23px;
+        color: white;
+      }
+      & > p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 15px;
+        color: white;
+      }
+    }
+    &-right {
+      width: 37.5%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      //   align-items: center;
+      justify-content: center;
+      padding: 0.5rem 1rem;
+      //   background-color: blue;
+      & > p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 15px;
+        color: white;
+      }
+      &-icons {
+        & > img {
+          width: 18px;
+          height: 18px;
+          margin-bottom: 0.5rem;
+        }
+        & > *:not(:first-child) {
+          margin-left: 0.7rem;
+        }
+      }
+    }
+  }
+}

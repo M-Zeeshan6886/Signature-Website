@@ -1,0 +1,33 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.popupbox {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  &-content {
+    width: 85%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    // background-color: aqua;
+    & > h3 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.3rem;
+      line-height: 16px;
+      color: #2b4465;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+  }
+}

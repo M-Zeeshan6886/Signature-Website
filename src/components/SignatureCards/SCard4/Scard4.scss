@@ -1,0 +1,171 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.scard4-contianer {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  &-content {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    padding: 0.5rem 0rem;
+    // background-color: aqua;
+    &-left {
+      width: 40%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: lightgray;
+      & > img {
+        width: 100%;
+      }
+    }
+    &-right {
+      width: 60%;
+      height: auto;
+      padding: 1rem 0.5rem;
+      // background-color: lightcyan;
+      & > h1 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 1.8rem;
+        // line-height: 31px;
+        color: #000000;
+      }
+      & > p {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.7rem;
+        // line-height: 10px;
+        letter-spacing: 0.04em;
+        color: #000000;
+      }
+      &-cdata {
+        margin-top: 1.2rem;
+        &-phone {
+          display: flex;
+          align-items: center;
+          & > span {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.8rem;
+            line-height: 8px;
+            letter-spacing: 0.05em;
+            color: #000000;
+          }
+          & > p {
+            margin-left: 0.5rem;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 8.73271px;
+            line-height: 8px;
+            letter-spacing: 0.05em;
+            color: #000000;
+          }
+        }
+        &-email {
+          display: flex;
+          align-items: center;
+          & > span {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.8rem;
+            line-height: 8px;
+            letter-spacing: 0.05em;
+            color: #000000;
+          }
+          & > p {
+            margin-left: 0.5rem;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 8.73271px;
+            line-height: 8px;
+            letter-spacing: 0.05em;
+            color: #000000;
+          }
+        }
+        &-website {
+          display: flex;
+          align-items: center;
+          & > span {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.8rem;
+            line-height: 8px;
+            letter-spacing: 0.05em;
+            color: #000000;
+          }
+          & > p {
+            margin-left: 0.5rem;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 8.73271px;
+            line-height: 8px;
+            letter-spacing: 0.05em;
+            color: #000000;
+          }
+        }
+        &-skype {
+          display: flex;
+          align-items: center;
+          & > span {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.8rem;
+            line-height: 8px;
+            letter-spacing: 0.05em;
+            color: #000000;
+          }
+          & > p {
+            margin-left: 0.5rem;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 8.73271px;
+            line-height: 8px;
+            letter-spacing: 0.05em;
+            color: #000000;
+          }
+        }
+      }
+      &-iconfield {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        display: flex;
+        // align-items: center;
+        // background-color: aqua;
+        &-icons {
+          width: 35%;
+          height: auto;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          // background-color: palevioletred;
+          &-data {
+            margin-left: 1rem;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.7rem;
+            line-height: 9px;
+            letter-spacing: 0.04em;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

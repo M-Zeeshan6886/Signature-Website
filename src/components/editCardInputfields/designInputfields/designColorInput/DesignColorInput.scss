@@ -1,0 +1,123 @@
+@import "../../../../Sass/mixin";
+@import "../../../../Sass/variables";
+
+.design-container {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: pink;
+  &-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    & > label {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 15px;
+      // text-align: center;
+      color: #2b4465;
+    }
+    & > input {
+      margin-top: 0.5rem;
+      background: none;
+      border: none;
+      padding: 11px 0px;
+      border-bottom: 2px solid #2b4465;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 13px;
+        color: #667b96;
+      }
+    }
+    &-div {
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: right;
+      //   padding: 0.5rem 0rem;
+      //   background-color: lightcoral;
+      background: none;
+      &-colorbox {
+        margin-top: -5.3rem;
+        width: 94px;
+        height: 43px;
+        // background: ;
+        border-radius: 9px;
+        margin-right: 0%;
+        @include respond(tab-port) {
+          margin-top: -6.3rem;
+        }
+      }
+    }
+  }
+}
+
+.design-container2 {
+  width: 100%;
+  height: auto;
+  margin-top: 2.5rem;
+  padding: 0.5rem 0rem;
+  // background-color: pink;
+  &-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    & > label {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 15px;
+      // text-align: center;
+      color: #2b4465;
+    }
+    & > input {
+      margin-top: 0.5rem;
+      background: none;
+      border: none;
+      padding: 11px 0px;
+      border-bottom: 2px solid #2b4465;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 13px;
+        color: #667b96;
+      }
+    }
+    &-div {
+      width: auto;
+      height: auto;
+      display: flex;
+      justify-content: right;
+      //   padding: 0.5rem 0rem;
+      //   background-color: lightcoral;
+      background: none;
+      &-colorbox {
+        margin-top: -5.3rem;
+        width: 94px;
+        height: 43px;
+        // background: ;
+        border-radius: 9px;
+        margin-right: 0%;
+        @include respond(tab-port) {
+          margin-top: -6.3rem;
+        }
+      }
+    }
+  }
+}

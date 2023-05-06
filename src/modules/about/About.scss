@@ -1,0 +1,144 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.about-container1 {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  padding: 0.5rem 0rem;
+  background-color: white;
+  &-content {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    // background-color: lightcoral;
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-left {
+      width: 55%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: lightgray;
+      @include respond(tab-port) {
+        width: 100%;
+      }
+      & > h1 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.7rem;
+        line-height: 50px;
+        color: #2b4465;
+      }
+      & > p {
+        width: 70%;
+        margin-top: 69px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 29px;
+        color: #667b96;
+      }
+    }
+    &-right {
+      width: 45%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: plum;
+      @include respond(tab-port) {
+        margin-top: 3rem;
+        width: 80%;
+      }
+      & > img {
+        width: 100%;
+        // box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+.engagingbtn {
+  width: 280px;
+  height: 55px;
+  margin-top: 28px;
+  background: $skyshede;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mission-container {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem;
+  background-color: white;
+  &-content {
+    width: 40%;
+    height: auto;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    // background-color: lightblue;
+    @include respond(tab-port) {
+      width: 80%;
+    }
+    & > h1 {
+      text-align: center;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.7rem;
+      line-height: 50px;
+      color: $lightnevi;
+    }
+    & > p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 29px;
+      text-align: center;
+      color: #667b96;
+    }
+  }
+}
+
+.about-stampify2 {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem;
+  background-color: white;
+  &-content {
+    width: 55%;
+    height: auto;
+    margin: auto;
+    padding: 1rem 0rem;
+    // background-color: pink;
+    @include respond(tab-port) {
+      width: 80%;
+    }
+    & > h1 {
+      text-align: center;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.7rem;
+      line-height: 50px;
+      color: $lightnevi;
+    }
+    & > p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 29px;
+      text-align: center;
+      color: #667b96;
+    }
+  }
+}

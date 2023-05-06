@@ -1,0 +1,66 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.sc12-container {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem;
+  background-color: #96ca52;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  &-content {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    padding: 1rem 0rem;
+    // background-color: gold;
+    &-left {
+      width: 37.5%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      //   background-color: aquamarine;
+      &-data {
+        margin-top: 5rem;
+        & > p {
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 15px;
+          color: #242424;
+        }
+      }
+      & > h1 {
+        font-weight: 500;
+        font-size: 1.7rem;
+        line-height: 17px;
+        color: #242424;
+      }
+    }
+    &-middle {
+      width: 37.5%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      //   background-color: lightblue;
+      & > p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 15px;
+        color: #242424;
+      }
+      &-icons {
+        margin-top: 47px;
+        & > *:not(:first-child) {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+    &-right {
+      width: 25%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 0rem;
+      //   background-color: aquamarine;
+    }
+  }
+}

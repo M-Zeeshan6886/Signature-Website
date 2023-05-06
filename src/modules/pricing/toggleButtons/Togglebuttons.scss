@@ -1,0 +1,501 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+//******************** General Tab Start ************************
+
+.gen-container {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: aqua;
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #2b4465;
+  }
+  &-content {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0rem;
+    // background-color:$lightsky;
+    &-rw1 {
+      width: 100%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      display: flex;
+      justify-content: space-between;
+      // background-color: palegreen;
+      &-left {
+        width: 60%;
+        height: auto;
+        padding: 0.5rem 0rem;
+        // background-color: lightgray;
+        & > *:not(:first-child) {
+          margin-top: 25px;
+        }
+      }
+      &-right {
+        width: 33%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 0rem;
+        // background-color: lightgoldenrodyellow;
+        & > *:not(:first-child) {
+          margin-top: 17px;
+        }
+        & > img {
+          cursor: pointer;
+        }
+      }
+    }
+    &-rw2 {
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+      padding: 0.5rem 0rem;
+      // background-color: purple;
+      & > *:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+  }
+  &-content2 {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0rem;
+    // background-color: peachpuff;zip
+    & > *:not(:first-child) {
+      margin-top: 25px;
+    }
+
+    & > h1 {
+      font-family: "Lato";
+      font-style: normal;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 26px;
+      color: #2b4465;
+    }
+  }
+}
+
+//******************** Template Tab Start ************************
+
+.temp-container {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: lemonchiffon;
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #2b4465;
+  }
+  &-content {
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+    // padding: 0.5rem 0rem;
+    // background-color: pink;
+    & > *:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+  &-btn {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    // padding: 0.5rem 0rem;
+    // background-color: paleturquoise;
+    &-button {
+      padding: 1rem 1.5rem;
+      border: 2px solid #2b4465;
+      border-radius: 18px;
+      background: none;
+      font-family: "Lato";
+      font-style: normal;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 13px;
+      color: #667b96;
+    }
+  }
+}
+
+//******************** Design Tab Start ************************
+.design-container {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: yellow;
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #2b4465;
+  }
+  &-content-rw1 {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0rem;
+    // background-color: peru;
+    & > *:not(:first-child) {
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+.design-container-content-rw2 {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 0rem;
+  border-bottom: 2px solid #2b4465;
+  // background-color: palevioletred;
+  & > *:not(:first-child) {
+    margin-top: 25px;
+  }
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #2b4465;
+  }
+  &-items {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    // background-color: palegreen;
+    & > p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.3rem;
+      line-height: 13px;
+      color: #667b96;
+    }
+    &-list {
+      width: 40%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0rem;
+      // background-color: papayawhip;
+      cursor: pointer;
+    }
+  }
+}
+.input_range {
+  -appearance: none;
+  outline: none;
+  height: 4px;
+  border-radius: 2.5px;
+  border: none;
+  width: 100%;
+  color: #2b4465;
+  box-shadow: inset 0 0 5px rgb(6, 6, 6);
+  // overflow: hidden;
+  cursor: pointer;
+  background: #d9d9d9;
+}
+.input_range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 8px;
+  box-shadow: 0px 0 5px $lightnevi;
+  border-radius: 50%;
+  // background: #000000;
+  // z-index: 99999;
+  color: #2b4465;
+}
+
+.IconColor {
+  width: 100%;
+  height: 10px;
+  background: #6ec4cf;
+  border-radius: 9px;
+}
+.Iconbg {
+  width: 100%;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 9px;
+}
+.design-container-content-rw3 {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 0rem;
+  border-bottom: 2px solid #2b4465;
+  // background-color: palevioletred;
+  & > *:not(:first-child) {
+    margin-top: 25px;
+  }
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #2b4465;
+  }
+  &-items {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    padding: 0.5rem 0rem;
+    // background-color: pink;
+    &-left {
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      padding: 0.5rem 0rem;
+      // background-color: lightcyan;
+    }
+    &-right {
+      width: 60%;
+      height: auto;
+      margin-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0.5rem 0rem;
+      // background-color: lightgray;
+      & > *:not(:first-child) {
+        margin-top: 2.5rem;
+      }
+      & > p {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.3rem;
+        line-height: 13px;
+        color: $lightnevi;
+      }
+    }
+  }
+}
+.dicross-icon {
+  margin-top: -1.3rem;
+  margin-left: -1.3rem;
+  cursor: pointer;
+}
+
+.design-container-content-rw4 {
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 0rem;
+  // border-bottom: 2px solid #2b4465;
+  // background-color: palevioletred;
+  & > *:not(:first-child) {
+    margin-top: 15px;
+  }
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #2b4465;
+  }
+  &-items1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 29px;
+    padding: 0.5rem 0rem;
+    // background-color: peachpuff;
+    & > p {
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 13px;
+      color: #667b96;
+    }
+    & > select {
+      width: 148px;
+      height: 43px;
+      padding: 0rem 0.5rem;
+      background: none;
+      border: 1px solid #8a8a8a;
+      border-radius: 8px;
+      color: #667b96;
+      &:focus {
+        outline: none;
+      }
+      & > option {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 13px;
+        color: #667b96;
+        & > p {
+          font-weight: 500;
+          font-size: 1.5rem;
+          line-height: 13px;
+          color: #667b96;
+        }
+      }
+    }
+  }
+  &-items2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    // background-color: peachpuff;
+    & > p {
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 13px;
+      color: #667b96;
+    }
+    &-colorbox {
+      width: 94px;
+      height: 43px;
+      background: #6ec4cf;
+      border-radius: 9px;
+      cursor: pointer;
+    }
+  }
+  &-items3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    // background-color: peachpuff;
+    & > p {
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 13px;
+      color: #667b96;
+    }
+    &-colorbox {
+      width: 94px;
+      height: 43px;
+      background: #6ec4cf;
+      border-radius: 9px;
+      cursor: pointer;
+    }
+  }
+}
+
+//******************** Social Tab Start ************************
+.social-container {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: papayawhip;
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #2b4465;
+  }
+  &-content {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0rem;
+    // background-color: palevioletred;
+  }
+  &-btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0.5rem 0rem;
+    // background-color: palegreen;
+    & > button {
+      background: none;
+      border: none;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.3rem;
+      line-height: 13px;
+      color: #667b96;
+    }
+  }
+}
+
+//******************** App Tab Start ************************
+.app-container {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: palegreen;
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: $lightnevi;
+  }
+  &-content {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    // background-color: olivedrab;
+    &-left {
+      width: 49%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: pink;
+      & > *:not(:first-child) {
+        margin-top: 15px;
+      }
+    }
+    &-right {
+      width: 49%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: pink;
+      & > *:not(:first-child) {
+        margin-top: 15px;
+      }
+    }
+  }
+}

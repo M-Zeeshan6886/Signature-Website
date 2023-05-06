@@ -1,0 +1,1354 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+// ***************************** Sub_Header ********************************
+
+.subheader-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.5rem 0rem;
+  background-color: white;
+  background-image: url("../../assets/homeAssets/headbackground.png");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  @include respond(phone) {
+    background: none;
+  }
+
+  &-content {
+    width: 75%;
+    height: auto;
+    // margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0rem;
+    // background-color: lightblue;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+    &-left {
+      padding: 0.5rem 0rem;
+      // background-color: lightcoral;
+      @include respond(tab-port) {
+        width: 100%;
+      }
+
+      & > h1 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.8rem;
+        line-height: 4rem;
+        color: #00356c;
+      }
+      & > p {
+        width: 85%;
+        margin-top: 29px;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.7rem;
+        line-height: 29px;
+        color: #667b96;
+      }
+    }
+    &-right {
+      width: 50%;
+      height: auto;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 0.5rem 0rem;
+      // background-color: lightgreen;
+      @include respond(tab-port) {
+        width: 80%;
+      }
+      @include respond(phone) {
+        // background-color: red;
+        width: 100%;
+      }
+      & > img {
+        width: 70rem;
+        // width: 120%;
+        height: 60rem;
+        @include respond(phone) {
+          // background-color: red;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// ************* Engagingbtn ****************
+.engagingbtn {
+  width: 280px;
+  height: 55px;
+  margin-top: 28px;
+  background-color: $skyshede;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+// ************* Social button component ****************
+
+.workseamlessly-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  background-color: white;
+  // background-color: red;
+  &-content {
+    padding: 0.5rem 0rem;
+    // background-color: papayawhip;
+
+    @include respond(tab-port) {
+      width: 90%;
+    }
+    & > h1 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.7rem;
+      line-height: 50px;
+      text-align: center;
+      color: #2b4465;
+    }
+    &-rw1 {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0rem;
+      // background-color: green;
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
+      @include respond(tab-land) {
+        width: 100%;
+        // background-color: lightblue;
+      }
+      &-gp1 {
+        display: flex;
+        justify-content: center;
+        // background-color: palegreen;
+        & > *:not(:first-child) {
+          margin-left: 1rem;
+        }
+        @include respond(tab-port) {
+          width: 57.5%;
+          align-items: center;
+          margin: auto;
+        }
+        @include respond(phone) {
+          width: 70%;
+          // background-color: white;
+        }
+      }
+      &-gp2 {
+        display: flex;
+        justify-content: center;
+        // background-color: lightblue;
+        margin-left: 1rem;
+        & > *:not(:first-child) {
+          margin-left: 1rem;
+        }
+        @include respond(tab-port) {
+          width: 63%;
+          margin: auto;
+          margin-top: 1rem;
+          //  background-color: red;
+        }
+        @include respond(phone) {
+          width: 76.5%;
+          // background-color: white;
+        }
+      }
+    }
+    &-rw2 {
+      display: flex;
+      justify-content: center;
+      justify-content: center;
+      padding: 0.5rem 0rem;
+      // background-color: goldenrod;
+      & > *:not(:first-child) {
+        margin-left: 1rem;
+      }
+      @include respond(phone) {
+        width: 95.5%;
+      }
+    }
+    &-rw3 {
+      // width: 100%;
+      margin-top: 5rem;
+    }
+  }
+}
+.socialbtns {
+  width: auto;
+  // width: 140px;
+  height: 4rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 3.1rem;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 100%;
+  color: #2b4465;
+
+  &:hover {
+    color: #ffffff;
+    background: $skyshede;
+    border-radius: 6px;
+    border: 1px solid $skyshede;
+  }
+  & > p {
+    margin-left: 1rem;
+  }
+}
+
+// ************* Signature_Solutions_Components ****************
+.signaturesolutions-container {
+  width: 100%;
+  // height: auto;
+  padding: 3rem 0rem;
+  background-color: white;
+  // @include respond(big-desktop) {
+  //   width: 100%;
+  // }
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7rem;
+    text-align: center;
+    line-height: 50px;
+    color: #2b4465;
+  }
+  &-content {
+    width: 75%;
+    // height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0rem;
+    // background-color: lightgreen;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    &-rw1 {
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: red;
+      @include respond(tab-port) {
+        display: flex;
+        width: 80%;
+        margin: auto;
+      }
+      @include respond(phone) {
+        flex-direction: column;
+        // background-color: khaki;
+      }
+      // &-content1{
+      // }
+      &-content2 {
+        margin-top: 2rem;
+        // background-color: gold;
+      }
+    }
+    &-rw2 {
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: pink;
+      @include respond(tab-port) {
+        display: flex;
+        width: 80%;
+        margin: auto;
+      }
+      @include respond(phone) {
+        flex-direction: column;
+      }
+      // &-content1{
+      //   background-color: khaki;
+      // }
+      &-content2 {
+        margin-top: 2rem;
+        // background-color: gold;
+      }
+    }
+    &-rw3 {
+      height: auto;
+      // background-color: lemonchiffon;
+      @include respond(tab-port) {
+        // display: flex;
+        width: 70%;
+        margin: auto;
+      }
+      & > img {
+        width: 100%;
+        // height: 50rem;
+      }
+    }
+  }
+}
+.ssolutions {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0em;
+  // background-color: paleturquoise;
+  &-content {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0rem;
+    // background-color: papayawhip;
+    & > h1 {
+      margin-top: 1rem;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 31px;
+      color: #2b4465;
+    }
+    & > p {
+      margin-top: 0.5rem;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 158%;
+      color: #667b96;
+      margin-bottom: 2.5rem;
+    }
+    & > span {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 158%;
+      color: #667b96;
+    }
+  }
+}
+// ************* Signature_template component ****************
+.signature-template {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem;
+  background-color: white;
+  @include respond(big-desktop) {
+    width: 100%;
+  }
+  &-container {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    // background-color: papayawhip;
+
+    & > h1 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2.7rem;
+      line-height: 50px;
+      color: $lightnevi;
+      text-align: center;
+      & > span {
+        font-size: 4.2rem;
+        color: $skyshede;
+      }
+    }
+    & > p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 23px;
+      text-align: center;
+      color: #667b96;
+    }
+  }
+  &-innercontainer {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    padding: 3rem 0rem;
+    background-color: $lightsky;
+    &-content {
+      width: 75%;
+      height: auto;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0rem;
+      // background-color: palevioletred;
+      & > *:not(:first-child) {
+        margin-left: 4rem;
+      }
+      @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+      }
+      &-col1 {
+        width: 35%;
+        height: auto;
+        padding: 0.5rem 0rem;
+        // background-color: pink;
+        @include respond(phone) {
+          width: 90%;
+        }
+        & > img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 2rem;
+        }
+      }
+      &-col2 {
+        width: 29%;
+        height: auto;
+        padding: 0.5rem 0rem;
+        // background-color: pink;
+        @include respond(phone) {
+          width: 90%;
+        }
+        & > img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 2rem;
+        }
+      }
+      &-col3 {
+        width: 29%;
+        height: auto;
+        padding: 0.5rem 0rem;
+        // background-color: pink;
+        @include respond(phone) {
+          width: 90%;
+        }
+        & > img {
+          width: 100%;
+          height: auto;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    &-content2 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+.PE-solutions-container {
+  width: 100%;
+  height: auto;
+  padding: 3.5rem 0rem;
+  background-color: white;
+  // background-color: lemonchiffon;
+  &-content {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    // background-color: pink;
+    & > h1 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.7rem;
+      line-height: 50px;
+      color: $lightnevi;
+      text-align: center;
+    }
+    &-rw2 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      padding: 2.5rem 0rem;
+      // background-color: red;
+      & > *:not(:first-child) {
+        margin-left: 7rem;
+      }
+      @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+        & > *:not(:first-child) {
+          margin-left: 0rem;
+        }
+      }
+    }
+    &-btn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.pecards {
+  width: 20%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: lightgreen;
+  @include respond(phone) {
+    width: 50%;
+  }
+  &-content {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    padding: 0.5rem 0rem;
+    // background-color: papayawhip;
+    & > h1 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 5rem;
+      line-height: 77px;
+      color: $skyshede;
+      text-align: center;
+    }
+    & > p {
+      margin-top: 0.5rem;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 19px;
+      text-align: center;
+      color: #667b96;
+    }
+  }
+}
+
+// ************* Company_Signature component ****************
+.company-signature-container {
+  width: 100%;
+  height: auto;
+  padding: 3rem 0rem;
+  background-color: white;
+  // background-color: red;
+  // @include respond(big-desktop) {
+  //   width: 100%;
+  // }
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 50px;
+    color: $lightnevi;
+    text-align: center;
+  }
+  &-content1 {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0rem;
+    // background-color: lightcyan;
+    @include respond(phone) {
+      flex-direction: column;
+      // margin: auto;
+      align-items: center;
+    }
+    &-left {
+      width: 65%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: pink;
+      @include respond(phone) {
+        width: 100%;
+      }
+      & > h2 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 43px;
+        color: #2b4465;
+      }
+      & > p {
+        width: 70%;
+        margin-bottom: 2.5rem;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 25px;
+        color: #667b96;
+      }
+    }
+    &-right {
+      width: 35%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: pink;
+      @include respond(phone) {
+        width: 80%;
+      }
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+  &-content2 {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 3rem 0rem;
+    // background-color: lightcyan;
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-left {
+      width: 65%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: pink;
+      @include respond(phone) {
+        width: 100%;
+      }
+      & > h2 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 43px;
+        color: #2b4465;
+      }
+      & > p {
+        width: 70%;
+        margin-bottom: 2.5rem;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 25px;
+        color: #667b96;
+      }
+    }
+    &-right {
+      width: 35%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: pink;
+      @include respond(phone) {
+        width: 80%;
+      }
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+}
+// ************* Stampify_Container component ****************
+.stampify-container {
+  width: 100%;
+  height: auto;
+  padding: 3rem 0rem;
+  background-color: white;
+  // background-color: red;
+  // @include respond(big-desktop) {
+  //   width: 100%;
+  // }
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 50px;
+    color: $lightnevi;
+    text-align: center;
+  }
+  &-innercontainer {
+    width: 100%;
+    height: auto;
+    margin-top: 10rem;
+    padding: 1rem 0rem;
+    background-color: $lightsky;
+    &-content {
+      width: 75%;
+      height: auto;
+      margin: auto;
+      padding: 2rem 0rem;
+      // background-color: papayawhip;
+      &-rw1 {
+        width: 100%;
+        height: auto;
+        margin-top: -10rem;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0rem;
+        // background-color: purple;
+        & > *:not(:first-child) {
+          margin-left: 3rem;
+        }
+        @include respond(phone) {
+          flex-direction: column;
+          margin-top: 0px;
+          align-items: center;
+          & > *:not(:first-child) {
+            margin-top: 1rem;
+            margin-left: 0rem;
+          }
+        }
+      }
+      &-rw2 {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        padding: 0.5rem 0rem;
+        // background-color: purple;
+
+        &-content {
+          width: 50%;
+          height: auto;
+          margin: auto;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          padding: 0.5rem 0rem;
+          // background-color: lemonchiffon;
+          @include respond(phone) {
+            margin: auto;
+            flex-direction: column;
+            width: 70%;
+            align-items: center;
+          }
+        }
+      }
+      &-rw3 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+.stampcards {
+  width: 23%;
+  height: auto;
+  padding: 2rem 0rem;
+  background: #ffffff;
+  box-shadow: 0px -4px 24px 8px rgba(110, 196, 207, 0.31);
+  border-radius: 16px;
+  @include respond(phone) {
+    width: 60%;
+  }
+  &-content {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    padding: 0.5rem 0rem;
+    // background-color: papayawhip;
+    & > h1 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 2rem;
+      // line-height: 77px;
+      color: #6ec4cf;
+      text-align: center;
+    }
+    & > p {
+      margin-top: 2.5rem;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 19px;
+      text-align: center;
+      color: #667b96;
+    }
+  }
+}
+.ProIcons {
+  width: 30px;
+  height: 30px;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  z-index: 99999;
+  @include respond(phone) {
+    margin-left: -28rem;
+    margin-bottom: -4rem;
+  }
+}
+.profileImg {
+  width: 250px;
+  margin-left: -3rem;
+  @include respond(phone) {
+    margin-left: 0px;
+  }
+}
+
+.signup-stampify-container {
+  width: 100%;
+  height: auto;
+  padding: 5rem 0rem;
+  background-color: white;
+  @include respond(big-desktop) {
+    width: 100%;
+  }
+  &-content {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > h1 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.7rem;
+      line-height: 40px;
+      text-align: center;
+      color: $lightnevi;
+    }
+  }
+}
+
+.ask-questions-container {
+  width: 100%;
+  height: auto;
+  padding: 3rem 0rem;
+  background-color: white;
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 50px;
+    text-align: center;
+    color: #2b4465;
+  }
+  &-content {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0rem;
+    // background-color: #667b96;
+    & > *:not(:first-child) {
+      margin-left: 2rem;
+    }
+    @include respond(phone) {
+      flex-direction: column;
+      align-items: center;
+      & > *:not(:first-child) {
+        margin-left: 0rem;
+      }
+    }
+
+    &-left {
+      width: 49%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: lightblue;
+      & > *:not(:first-child) {
+        margin-top: 1.5rem;
+      }
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
+    &-right {
+      width: 49%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: lightblue;
+      & > *:not(:first-child) {
+        margin-top: 1.5rem;
+      }
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.about-stampify-container {
+  width: 100%;
+  height: auto;
+  padding: 5rem 0rem;
+  background-color: white;
+  @include respond(big-desktop) {
+    width: 100%;
+  }
+  &-content {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    // background-color: palegreen;
+    & > h1 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.7rem;
+      line-height: 50px;
+      text-align: center;
+      color: #2b4465;
+    }
+    & > p {
+      width: 68%;
+      margin: auto;
+      margin-top: 1.5rem;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 19px;
+      text-align: center;
+      color: #667b96;
+    }
+  }
+}
+.about-stampify-container2 {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  background-color: $lightsky;
+  @include respond(big-desktop) {
+    width: 100%;
+  }
+  &-content {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    // background-color: plum;
+    @include respond(phone) {
+      flex-direction: column;
+    }
+    &-left {
+      width: 70%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: lemonchiffon;
+      @include respond(phone) {
+        width: 100%;
+      }
+      & > h2 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.3rem;
+        line-height: 43px;
+        color: $lightnevi;
+      }
+      & > p {
+        width: 90%;
+        margin-top: 2rem;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 23px;
+        color: #667b96;
+      }
+    }
+    &-right {
+      width: 25%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: lightblue;
+      @include respond(phone) {
+        width: 65%;
+      }
+      & > img {
+        width: 100%;
+        height: 350px;
+      }
+    }
+  }
+}
+.about-stampify-container3 {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: #6ec4cf53;
+  background-color: white;
+  @include respond(big-desktop) {
+    width: 100%;
+  }
+  &-content {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    // background-color: plum;
+    @include respond(phone) {
+      flex-direction: column;
+    }
+    &-left {
+      width: 70%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: lemonchiffon;
+      @include respond(phone) {
+        width: 100%;
+      }
+      & > h2 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.3rem;
+        line-height: 43px;
+        color: $lightnevi;
+      }
+      & > p {
+        width: 90%;
+        margin-top: 2rem;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 23px;
+        color: #667b96;
+      }
+    }
+    &-right {
+      width: 25%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: lightblue;
+      @include respond(phone) {
+        width: 60%;
+      }
+      & > img {
+        width: 100%;
+        height: 245px;
+      }
+    }
+  }
+}
+.about-stampify-container4 {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  background-color: $lightsky;
+  @include respond(big-desktop) {
+    width: 100%;
+  }
+  &-content {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    // background-color: plum;
+    @include respond(phone) {
+      flex-direction: column;
+    }
+    &-left {
+      width: 70%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: lemonchiffon;
+      @include respond(phone) {
+        width: 100%;
+      }
+      & > h2 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.3rem;
+        line-height: 43px;
+        color: $lightnevi;
+      }
+      & > p {
+        width: 90%;
+        margin-top: 2rem;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 23px;
+        color: #667b96;
+      }
+    }
+    &-right {
+      width: 25%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: lightblue;
+      @include respond(phone) {
+        width: 60%;
+      }
+
+      & > img {
+        width: 100%;
+        height: 350px;
+      }
+    }
+  }
+}
+.getStarted-stampify {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0rem;
+  // background-color: ;
+}
+
+// .feedback-container {
+//   width: 100%;
+//   height: auto;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding: 7rem 0rem;
+//   background-color: white;
+//   @include respond(big-desktop) {
+//     width: 100%;
+//   }
+//   & > span {
+//     font-family: "Lato";
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 1.5rem;
+//     line-height: 29px;
+//     text-align: center;
+//     color: $skyshede;
+//   }
+//   & > h1 {
+//     font-family: "Lato";
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 2.7rem;
+//     line-height: 35px;
+//     text-align: center;
+//     color: #2b4465;
+//   }
+//   &-content {
+//     width: 75%;
+//     height: auto;
+//     margin: auto;
+//     margin-top: 3rem;
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 0.5rem 0rem;
+//     // background-color: lightcyan;
+//     @include respond(phone) {
+//       flex-direction: column;
+//       width: 80%;
+//     }
+//     &-rw1 {
+//       width: 39%;
+//       height: auto;
+//       display: flex;
+//       justify-content: space-between;
+//       padding: 0.5rem 0rem;
+//       // background-color: papayawhip;
+//       @include respond(phone) {
+//         //  flex-direction: column;
+//         width: 100%;
+//       }
+//       &-col1 {
+//         // background-color: peru;
+//         & > *:not(:first-child) {
+//           margin-top: 1.5rem;
+//         }
+//       }
+//       &-col2 {
+//         // background-color: lightblue;
+//         & > *:not(:first-child) {
+//           margin-top: 1.5rem;
+//         }
+//       }
+//     }
+//     &-rw2 {
+//       width: 39%;
+//       height: auto;
+//       display: flex;
+//       justify-content: space-between;
+//       padding: 0.5rem 0rem;
+//       // background-color: papayawhip;
+//       @include respond(phone) {
+//         width: 100%;
+//       }
+//       &-col1 {
+//         // background-color: peru;
+//         & > *:not(:first-child) {
+//           margin-top: 1.5rem;
+//         }
+//       }
+//       &-col2 {
+//         // background-color: peru;
+//         & > *:not(:first-child) {
+//           margin-top: 1.5rem;
+//         }
+//       }
+//     }
+//     &-rw3 {
+//       width: 20%;
+//       height: auto;
+//       padding: 0.5rem 0rem;
+//       // background-color: papayawhip;
+//       & > *:not(:first-child) {
+//         margin-top: 1.5rem;
+//       }
+//     }
+//   }
+// }
+// .feedbackcards1 {
+//   width: 180px;
+//   // height: auto;
+//   height: 23vh;
+//   background: rgba(219, 240, 243, 0.7);
+//   border-radius: 16px;
+//   padding: 2rem 0rem;
+//   &-content {
+//     width: 85%;
+//     height: auto;
+//     margin: auto;
+//     // background-color: lightgray;
+//     &-rw1 {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       & > h1 {
+//         font-family: "Poppins";
+//         font-style: normal;
+//         font-weight: 600;
+//         font-size: 2.5rem;
+//         line-height: 44px;
+//         color: #191919;
+//         & > span {
+//           font-size: 1.5rem;
+//           color: #667b96;
+//         }
+//       }
+//       & > img {
+//         width: 70px;
+//       }
+//     }
+//     & > h2 {
+//       font-family: "Poppins";
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: 1.5rem;
+//       line-height: 28px;
+//       /* Black */
+//       color: #191919;
+//     }
+//     & > span {
+//       font-family: "Poppins";
+//       font-style: normal;
+//       // font-weight: 700;
+//       font-size: 1rem;
+//       color: #667b96;
+//     }
+//   }
+// }
+
+// .feedbackcards2 {
+//   width: 180px;
+//   height: auto;
+//   background: rgba(219, 240, 243, 0.7);
+//   border-radius: 16px;
+//   padding: 2rem 0rem;
+//   &-content {
+//     width: 85%;
+//     height: auto;
+//     margin: auto;
+//     padding: 0.5rem 0rem;
+//     // background-color: plum;
+//     & > img {
+//       margin-bottom: 2rem;
+//     }
+//     & > p {
+//       width: 90%;
+//       font-family: "Poppins";
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 1rem;
+//       // margin-top: 2rem;
+//       // line-height: 24px;
+//       /* Davy’s-Gray */
+//       color: #595959;
+//     }
+//     & > h2 {
+//       font-family: "Poppins";
+//       font-style: normal;
+//       font-weight: 700;
+//       font-size: 1.5rem;
+//       line-height: 28px;
+//       color: #191919;
+//     }
+//   }
+// }
+
+.priority-container {
+  width: 100%;
+  height: auto;
+  padding: 5rem 0rem;
+  background-color: white;
+  &-content {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    padding: 2rem 0rem;
+    // background-color: lightcyan;
+    & > h1 {
+      font-weight: 700;
+      font-size: 2.7rem;
+      line-height: 50px;
+      text-align: center;
+      color: #2b4465;
+    }
+    & > p {
+      width: 50%;
+      margin: auto;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 19px;
+      text-align: center;
+      color: #667b96;
+      margin-top: 3rem;
+    }
+  }
+}

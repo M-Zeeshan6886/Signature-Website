@@ -1,0 +1,66 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.scard2-container {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  //   background-color: lightcoral;
+  //   height: 125.59px;
+  background: #ffffff;
+  border-radius: 173.527px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  &-content {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    // background-color: lightgray;
+    &-left {
+      width: 58%;
+      height: auto;
+      padding: 0.5rem 2rem;
+      //   background-color: peachpuff;
+      & > h2 {
+        // font-family: "Avenir";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 1.5rem;
+        line-height: 33px;
+        color: #000000;
+      }
+      & > hr {
+        border: 1px solid #000000;
+      }
+      & > p {
+        // font-family: "Avenir";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #000000;
+      }
+      &-icons {
+        margin-top: 0.5rem;
+        & > *:not(:first-child) {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+    &-right {
+      width: 40%;
+      height: 20vh;
+      padding: 0.5rem 0rem;
+      //   background-color: paleturquoise;
+      border-radius: 50%;
+      background-image: url("../../../assets/SCardsAssets/sc2/sc2profile.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

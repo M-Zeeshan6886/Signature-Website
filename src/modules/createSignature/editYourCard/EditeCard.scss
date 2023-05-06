@@ -1,0 +1,443 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.editcard-container {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  &-content {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    // padding: 0.5rem 0rem;
+    // background-color: $lightsky;
+    // background-color: red;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    &-left {
+      width: 40%;
+      height: auto;
+      padding: 2rem 0.5rem;
+      background-color: $lightsky;
+      @include respond(tab-port) {
+        width: 100%;
+        margin: auto;
+      }
+    }
+    &-right {
+      width: 60%;
+      height: 824px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 0rem;
+      background-color: #00c6f76d;
+      @include respond(tab-port) {
+        width: 100%;
+        margin: auto;
+      }
+      &-mainContainer {
+        width: 75%;
+        height: auto;
+        padding: 0.5rem 0rem;
+        // background-color: pink;
+        & > h1 {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 2.3rem;
+          text-align: center;
+          line-height: 38px;
+          color: $lightnevi;
+        }
+        &-content {
+          width: 100%;
+          height: auto;
+          margin-top: 20px;
+          padding: 0.5rem 0rem;
+          // background-color: plum;
+        }
+      }
+      &-echaticon {
+        width: 100%;
+        height: auto;
+        margin-top: 98px;
+        display: flex;
+        justify-content: right;
+        padding: 0.5rem 0rem;
+        // background-color: palevioletred;
+        & > img {
+          margin-right: 36px;
+        }
+      }
+    }
+  }
+}
+
+.emailbox {
+  width: 100%;
+  height: 350px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  &-content {
+    width: 100%;
+    height: auto;
+    // padding: 0.5rem 0rem;
+    // background-color: lightsalmon;
+    &-rw1 {
+      width: 100%;
+      height: 49px;
+      display: flex;
+      align-items: center;
+      background: $lightnevi;
+      border-radius: 24.3333px 24.3333px 0px 0px;
+      &-items {
+        margin-left: 19.47px;
+        width: 40%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0rem;
+        // background-color: #6ec4cf;
+        & > *:not(:first-child) {
+          margin-left: 7px;
+        }
+        & > img {
+          cursor: pointer;
+        }
+      }
+    }
+    &-rw2 {
+      width: 100%;
+      height: auto;
+      // padding: 0.5rem 0rem;
+      // background-color: lemonchiffon;
+      & > *:not(:first-child) {
+        margin-top: 1.95px;
+      }
+      & > input {
+        width: 100%;
+        height: 38px;
+        border: none;
+        padding: 0rem 1.5rem;
+        // padding-left: 5rem;
+        background: #f0f0f0;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    &-rw3 {
+      width: 100%;
+      height: auto;
+      margin-top: 2.5rem;
+      padding: 0rem 2rem;
+      // background-color: palevioletred;
+    }
+  }
+}
+
+.btn-field {
+  width: 100%;
+  margin-top: 33px;
+  display: flex;
+  justify-content: center;
+  // background-color: peru;
+  & > button {
+    width: 280px;
+    height: 55px;
+    cursor: pointer;
+    background: $lightnevi;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: "Lato";
+    line-height: 18px;
+  }
+}
+//************************** Popup or Modal 1 ***********************************
+body.active-modal {
+  overflow-y: hidden;
+}
+body.active-modal2 {
+  overflow-y: hidden;
+}
+
+.popup-overlay {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #00356c;
+  opacity: 0.9;
+  z-index: 99999999999;
+  position: fixed;
+
+  & > img {
+    margin-top: -660px;
+    margin-right: 1rem;
+    cursor: pointer;
+    @include respond(phone) {
+      margin-top: -500px;
+      margin-right: 2rem;
+    }
+  }
+  &-main {
+    width: 37%;
+    height: auto;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    // background-color: pink;
+    @include respond(phone) {
+      width: 46%;
+    }
+    & > h3 {
+      text-align: center;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 24px;
+      color: #ffffff;
+    }
+    &-content {
+      width: 90%;
+      height: auto;
+      margin: auto;
+      margin-top: 2rem;
+      padding: 0.5rem 0rem;
+      // background-color: palegreen;
+      &-rw1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0rem;
+        // background-color: papayawhip;
+        & > *:not(:first-child) {
+          margin-left: 1rem;
+        }
+        @include respond(phone) {
+          flex-direction: column;
+          & > *:not(:first-child) {
+            margin-left: 0rem;
+          }
+        }
+        &-left {
+          display: flex;
+          justify-content: center;
+          padding: 0.5rem 0rem;
+          // background-color: peru;
+          & > *:not(:first-child) {
+            margin-left: 1rem;
+          }
+          @include respond(phone) {
+            width: 100%;
+          }
+        }
+        &-right {
+          display: flex;
+          justify-content: center;
+          padding: 0.5rem 0rem;
+          // background-color: peru;
+          & > *:not(:first-child) {
+            margin-left: 1rem;
+          }
+          @include respond(phone) {
+            width: 100%;
+          }
+        }
+      }
+      &-rw2 {
+        width: 75%;
+        height: auto;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        padding: 0.5rem 0rem;
+        // background-color: greenyellow;
+        & > *:not(:first-child) {
+          margin-left: 1rem;
+        }
+        @include respond(phone) {
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          & > *:not(:first-child) {
+            margin-top: 1rem;
+            margin-left: 0rem;
+          }
+        }
+        &-left {
+          display: flex;
+          // background-color: peru;
+          & > *:not(:first-child) {
+            margin-left: 1rem;
+          }
+          @include respond(phone) {
+            width: 100%;
+          }
+        }
+      }
+      &-btnfield {
+        width: 100%;
+        height: auto;
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0rem;
+        // background-color: #6ec4cf;
+        &-btn {
+          width: 102px;
+          height: 35px;
+          background: #00c5f7;
+          border-radius: 6px;
+          border: none;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 12px;
+          color: #2b4465;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+//************************** Popup or Modal 2 ***********************************
+.popup-overlay2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #00356c;
+  opacity: 0.9;
+  z-index: 99999999999;
+  position: fixed;
+  &-main {
+    width: 45%;
+    height: auto;
+    margin: auto;
+    // padding: 0.5rem 0rem;
+    // background-color: pink;
+    @include respond(phone) {
+      width: 46%;
+    }
+    &-header {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1.8rem;
+      background-color: white;
+      & > h3 {
+        text-align: center;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 24px;
+        color: #2c4667;
+      }
+      & > img {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+      }
+    }
+    &-content {
+      width: 100%;
+      height: auto;
+      display: flex;
+      // padding: 0.5rem 0rem;
+      // background-color: paleturquoise;
+      &-left {
+        width: 31%;
+        height: 350px;
+        padding: 3rem 0rem;
+        background-color: $lightsky;
+        & > *:not(:first-child) {
+          margin-top: 2.5rem;
+        }
+        &-items {
+          width: 80%;
+          margin: auto;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          & > *:not(:first-child) {
+            margin-left: 1.5rem;
+          }
+          & > p {
+            font-weight: 700;
+            font-size: 1.2rem;
+            line-height: 16px;
+            color: #2c4667;
+          }
+          & > img {
+            width: 16px;
+            height: 15px;
+          }
+        }
+      }
+      &-right {
+        width: 70%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 0rem;
+        background-color: white;
+        &-content {
+          width: 70%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0.5rem 0rem;
+          // background-color: palevioletred;
+          & > h1 {
+            text-align: center;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 24px;
+            color: #2c4667;
+          }
+          &-items {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & > *:not(:first-child) {
+              margin-left: 11px;
+            }
+            & > p {
+              font-weight: 400;
+              font-size: 1.4rem;
+              line-height: 22px;
+              color: #2c4667;
+            }
+          }
+          &-btn {
+            margin-top: 3rem;
+            background: #00cbfe;
+            border-radius: 6px;
+            padding: 1rem 3rem;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

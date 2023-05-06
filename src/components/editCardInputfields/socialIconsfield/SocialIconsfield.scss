@@ -1,0 +1,333 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.orignalicons {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: palevioletred;
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #2b4465;
+  }
+  &-content {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0rem;
+    // background-color: peachpuff;
+    & > *:not(:first-child) {
+      margin-top: 1rem;
+    }
+    &-rw1 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: peachpuff;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+    &-rw2 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: green;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+    &-rw3 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: peachpuff;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.orignalicons-container2 {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: palevioletred;
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #2b4465;
+  }
+  &-content {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0rem;
+    // background-color: peachpuff;
+    & > *:not(:first-child) {
+      margin-top: 1rem;
+    }
+    &-rw1 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: peachpuff;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+    &-rw2 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: green;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+    &-rw3 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: peachpuff;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.orignalicons-container3 {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: palevioletred;
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #2b4465;
+  }
+  &-content {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0rem;
+    // background-color: peachpuff;
+    & > *:not(:first-child) {
+      margin-top: 1rem;
+    }
+    &-rw1 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: peachpuff;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+    &-rw2 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: green;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+    &-rw3 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: peachpuff;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.orignalicons-container4 {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: palevioletred;
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #2b4465;
+  }
+  &-content {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0rem;
+    // background-color: peachpuff;
+    & > *:not(:first-child) {
+      margin-top: 1rem;
+    }
+    &-rw1 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: peachpuff;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+    &-rw2 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: green;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+    &-rw3 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: peachpuff;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.orignalicons-container5 {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  // background-color: palevioletred;
+  & > h1 {
+    font-family: "Lato";
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 26px;
+    color: #2b4465;
+  }
+  &-content {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0rem;
+    // background-color: peachpuff;
+    & > *:not(:first-child) {
+      margin-top: 1rem;
+    }
+    &-rw1 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: peachpuff;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+    &-rw2 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: green;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+    &-rw3 {
+      width: 100%;
+      height: auto;
+      //   padding: 0.5rem 0rem;
+      //   background-color: peachpuff;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.nav-container {
+  width: 100%;
+  height: auto;
+  // padding: 0.5rem 0rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 33px -13px rgba(0, 0, 0, 0.25);
+  // background-color: #8a8a8a;
+  @include respond(tab-port) {
+    display: none;
+  }
+  &-content {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    // background-color: plum;
+    &-left {
+      width: 10%;
+      // background-color: #8a8a8a;
+      & > h1 {
+        font-family: "Kalam";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 51px;
+        color: $skyshede;
+        cursor: pointer;
+      }
+    }
+    &-middle {
+      // background-color: aquamarine;
+      & > *:not(:first-child) {
+        margin-left: 44px;
+      }
+    }
+    &-right {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      width: 15%;
+      // background-color: #8a8a8a;
+      // display: flex;
+      // align-items: center;
+    }
+  }
+}
+.loginbtn {
+  // width: 118px;
+  // height: 46px;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  background: $skyshede;
+  border-radius: 999px;
+  border: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 100%;
+  color: white;
+  cursor: pointer;
+}
+
+.menubtns {
+  height: 86px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 22px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: #8a8a8a;
+  cursor: pointer;
+}
+
+.active {
+  padding-bottom: 20px;
+  color: $skyshede;
+  border-bottom: 3px solid $skyshede;
+}
+.profilebtn {
+  width: 32px;
+  height: 32px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+// ******************** Responsive NavBar *****************************
+
+.responsive-nav {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0rem;
+  background-color: white;
+  display: none;
+  box-shadow: 0px 4px 33px -13px rgba(0, 0, 0, 0.25);
+  // margin-bottom: 17px;
+  @include respond(tab-port) {
+    display: block;
+  }
+  &-content {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    // background-color: peachpuff;
+    &-left {
+      display: flex;
+      align-items: center;
+      & > *:not(:first-child) {
+        margin-left: 1rem;
+      }
+    }
+    &-right {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.menuIcons {
+  font-size: 20px;
+  color: #2e4767;
+  cursor: pointer;
+}
+// ******************** Responsive NavBar Dropdown Container *****************************
+.responsivedropdown-container {
+  width: 50%;
+  height: 90vh;
+  z-index: 999999999999;
+  padding: 0.5rem 0rem;
+  background-color: #2e4767;
+  &-content {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 0.5rem 0rem;
+    &-section {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      padding: 1.5rem 0rem;
+      // background-color: peru;
+      & > *:not(:first-child) {
+        margin-left: 1.5rem;
+      }
+      & > img {
+        width: 15px;
+      }
+    }
+    & > hr {
+      width: 100%;
+      border: 1px solid #a4a7ab;
+    }
+  }
+}
+
+.dropdownmenu-btn {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 22px;
+  color: #b5b5b5;
+  text-decoration: none;
+}

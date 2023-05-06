@@ -1,0 +1,218 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.footer-container {
+  width: 100%;
+  height: auto;
+  padding: 4rem 0rem;
+  background-color: $lightnevi;
+  &-content1 {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    // background-color: palevioletred;
+    @include respond(phone) {
+      flex-direction: column;
+    }
+    &-rw1 {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+      // background-color: lawngreen;
+      @include respond(phone) {
+        width: 100%;
+      }
+      &-col1 {
+        width: 50%;
+        height: auto;
+        padding: 0.5rem 0rem;
+        // background-color: lightblue;
+        @include respond(phone) {
+          width: 48%;
+        }
+        & > h3 {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 20px;
+          color: #ffffff;
+          margin-bottom: 1rem;
+        }
+        & > p {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.5rem;
+          line-height: 26px;
+          color: #8a8a8a;
+        }
+      }
+      &-col2 {
+        width: 50%;
+        height: auto;
+        padding: 0.5rem 0rem;
+        //   background-color: lightblue;
+        @include respond(phone) {
+          width: 48%;
+        }
+        & > h3 {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 20px;
+          color: #ffffff;
+          margin-bottom: 1rem;
+        }
+        & > p {
+          // margin-top: 1rem;
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.5rem;
+          line-height: 26px;
+          color: #8a8a8a;
+        }
+      }
+    }
+    &-rw2 {
+      width: 55%;
+      display: flex;
+      justify-content: space-between;
+      // background-color: palevioletred;
+      @include respond(phone) {
+        width: 100%;
+      }
+      @include respond(phone) {
+        margin-top: 4rem;
+      }
+
+      &-col3 {
+        width: 33%;
+        height: auto;
+        padding: 0.5rem 0rem;
+        // background-color: lightblue;
+        @include respond(phone) {
+          width: 33%;
+        }
+        & > h3 {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 20px;
+          color: #ffffff;
+          margin-bottom: 1rem;
+        }
+        & > p {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.5rem;
+          line-height: 26px;
+          color: #8a8a8a;
+        }
+      }
+      &-col4 {
+        width: 27%;
+        height: auto;
+        padding: 0.5rem 0rem;
+        // background-color: lightblue;
+        @include respond(phone) {
+          width: 27%;
+        }
+        & > h3 {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 20px;
+          color: #ffffff;
+          margin-bottom: 1rem;
+        }
+        & > p {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.5rem;
+          line-height: 26px;
+          color: #8a8a8a;
+        }
+      }
+      &-col5 {
+        width: 40%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        padding: 0.5rem 0rem;
+        // background-color: lightblue;
+        @include respond(phone) {
+          width: 40%;
+        }
+        & > h3 {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 20px;
+          color: #ffffff;
+          margin-bottom: 1rem;
+        }
+        &-fticons {
+          & > img {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+          }
+          & > *:not(:first-child) {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+  &-content2 {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    // background-color: pink;
+    & > h1 {
+      display: flex;
+      align-items: center;
+      @include respond(tab-port) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      & > span {
+        margin-left: 1.5rem;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 20px;
+        color: #ffffff;
+      }
+      & > img {
+        width: 130px;
+        height: 44px;
+      }
+    }
+    & > img {
+      cursor: pointer;
+      margin-right: 12rem;
+      @include respond(tab-port) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

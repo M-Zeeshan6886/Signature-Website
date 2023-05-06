@@ -1,0 +1,187 @@
+@import "../../../Sass/mixin";
+@import "../../../Sass/variables";
+
+.scard1-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  //   padding: 0.5rem 0rem;
+  //   background-color: palevioletred;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  &-content1 {
+    width: 22%;
+    height: auto;
+    padding: 0.5rem 0rem;
+    background-color: $skyshede;
+
+  }
+  &-content2 {
+    width: 63%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    background-color: white;
+    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    & > img {
+      width: 130px;
+      height: 134px;
+      margin-left: -6.5rem;
+    }
+    &-data {
+      width: 79%;
+      height: auto;
+      padding: 0.5rem 0rem;
+      // background-color: peru;
+      &-content {
+        width: 90%;
+        margin: auto;
+        & > h5 {
+          // font-family: "Avenir";
+          font-style: italic;
+          font-weight: 800;
+          font-size: 1.2rem;
+          line-height: 20px;
+          color: #eaad1e;
+        }
+        & > p {
+          // font-family: "Avenir";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 0.9rem;
+          line-height: 13px;
+          color: #000000;
+        }
+        &-email {
+          margin-top: 1rem;
+          display: flex;
+          align-items: center;
+          //   background-color: #70c9d6;
+          & > h5 {
+            //   font-family: "Georgia";
+            font-style: italic;
+            font-weight: 700;
+            font-size: 0.7rem;
+            line-height: 9px;
+            color: #70C9D6;
+          }
+          & > p {
+            //   font-family: "Georgia";
+            margin-left: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.7rem;
+            line-height: 9px;
+            color: #000000;
+          }
+        }
+        &-phone {
+          margin-top: 0.2rem;
+          display: flex;
+          align-items: center;
+          //   background-color: #70c9d6;
+          & > h5 {
+            //   font-family: "Georgia";
+            font-style: italic;
+            font-weight: 700;
+            font-size: 0.7rem;
+            line-height: 9px;
+            color: #70c9d6;
+          }
+          & > p {
+            //   font-family: "Georgia";
+            margin-left: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.7rem;
+            line-height: 9px;
+            color: #000000;
+          }
+        }
+        &-address {
+          margin-top: 0.2rem;
+          display: flex;
+          align-items: center;
+          //   background-color: #70c9d6;
+          & > h5 {
+            //   font-family: "Georgia";
+            font-style: italic;
+            font-weight: 700;
+            font-size: 0.7rem;
+            line-height: 9px;
+            color: #70c9d6;
+          }
+          & > p {
+            //   font-family: "Georgia";
+            margin-left: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.7rem;
+            line-height: 9px;
+            color: #000000;
+          }
+        }
+        &-visit {
+          margin-top: 0.2rem;
+          display: flex;
+          align-items: center;
+          //   background-color: #70c9d6;
+          & > h5 {
+            //   font-family: "Georgia";
+            font-style: italic;
+            font-weight: 700;
+            font-size: 0.7rem;
+            line-height: 9px;
+            color: #70c9d6;
+          }
+          & > p {
+            //   font-family: "Georgia";
+            margin-left: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.7rem;
+            line-height: 9px;
+            color: #000000;
+          }
+        }
+        &-subscribe {
+          margin-top: 0.2rem;
+          display: flex;
+          align-items: center;
+          //   background-color: #70c9d6;
+          & > h5 {
+            //   font-family: "Georgia";
+            font-style: italic;
+            font-weight: 700;
+            font-size: 0.7rem;
+            line-height: 9px;
+            color: #70c9d6;
+          }
+          & > p {
+            //   font-family: "Georgia";
+            margin-left: 1.5rem;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.7rem;
+            line-height: 9px;
+            color: #000000;
+          }
+        }
+        &-icons {
+          margin-top: 0.5rem;
+          display: flex;
+          align-items: center;
+          & > *:not(:first-child) {
+            margin-left: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+  &-content3 {
+    width: 15%;
+    height: auto;
+    padding: 0.5rem 0rem;
+    background-color: $skyshede;
+  }
+}

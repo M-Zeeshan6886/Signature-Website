@@ -1,0 +1,11 @@
+export { default as SignUp } from "./signup/SignUp";
+export { default as SignIn } from "./signin/Signin";
+export { default as Forgetpassord } from "./forgetPassword/Forgetpassword";
+export { default as Home } from "./home/Home";
+export { default as CreateSignature } from "./createSignature/CreateSignature";
+export { default as EditCard } from "./createSignature/editYourCard/EditeCard";
+export { default as Contactus } from "./contactUs/Contactus";
+export { default as Pricing } from "./pricing/Pricing";
+export { default as About } from "./about/About";
+export { default as Privacy } from "./privacyPolicy/Privacy";
+export { default as ProfileLayout } from "./profileScreens/profileLayout/ProfileLayout";

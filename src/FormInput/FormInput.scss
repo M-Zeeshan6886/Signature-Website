@@ -1,0 +1,59 @@
+@import "../Sass/mixin";
+@import "../Sass/variables";
+
+.form {
+  &-label {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 29px;
+    text-transform: capitalize;
+    color: #2b4465;
+  }
+  &-input {
+    width: 100%;
+
+    background: #bbeefa;
+    // border-radius: 4.8375px;
+    // opacity: 0.4;
+    padding: 0.7rem 0.8rem;
+    margin-bottom: 19px;
+    border: 1.20938px solid #eeeeee;
+    color: #2b4465;
+
+    &:focus {
+      outline: none;
+      border: none;
+      //   background-color: #ffffff;
+      box-shadow: 2px 2px 10px rgb(186, 185, 185);
+    }
+    &:hover {
+      outline: none;
+      //   background-color: white;
+      //   box-shadow: 2px 2px 10px rgb(61, 61, 61);
+    }
+    &::placeholder {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 19px;
+      text-transform: capitalize;
+      color: #8a8a8a;
+    }
+  }
+  &-error {
+    position: absolute;
+    margin-top: -2rem;
+    margin-left: 4px;
+    color: red;
+    font-size: 10px;
+    font-weight: 300;
+  }
+}
+
+.is-invalid {
+  outline: red;
+  border: 1px solid red;
+}

@@ -1,0 +1,30 @@
+@import "../../Sass/mixin";
+@import "../../Sass/variables";
+
+.pro {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0.5rem 0.5rem;
+  background: none;
+  // background-color: aqua;
+  // display: none;
+  //   margin-top: -8.8rem;
+  &-content {
+    width: 35px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5467e;
+    border-radius: 2px;
+    & > p {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 16px;
+      color: #ffffff;
+    }
+  }
+}

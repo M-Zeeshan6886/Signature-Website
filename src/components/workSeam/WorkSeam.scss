@@ -1,0 +1,52 @@
+@import "../../Sass/variables";
+
+.seam {
+  margin-top: 5rem;
+}
+.workseam {
+  // width: 64%;
+  // margin: auto;
+  &-container {
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > * {
+        &:not(:last-child) {
+          margin-right: 0.8rem;
+        }
+      }
+    }
+    &-bottom {
+      margin-top: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > * {
+        &:not(:last-child) {
+          margin-right: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+// Sub Components
+
+.workseam-card {
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 1.3rem 2.4rem;
+  display: flex;
+  align-items: center;
+  & > img {
+    height: 2.5rem;
+    width: 2.5rem;
+    // border-radius: 50%;
+    margin-right: 1.5rem;
+  }
+  & > p {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
